@@ -60,10 +60,16 @@
 
         &-title {
             color: $commonWhite;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            font-size: 2.0rem;
         }
 
         &-subtitle {
             color: $commonWhite;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            font-size: 1.2rem;
         }
     }
 
