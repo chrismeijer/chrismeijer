@@ -8,6 +8,7 @@ const postCSSPlugins = [
 ]
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const Webpack = require('webpack')
 
 module.exports = {
     entry: './src/app.js',
@@ -57,7 +58,12 @@ module.exports = {
     }, 
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/index.html'
+            template: './src/index.html',
+        }),
+        new Webpack.ProvidePlugin({
+            $: 'jquery',
+            jquery: 'jQuery',
+            'window.jQuery': 'jquery'
         })
     ]
 }

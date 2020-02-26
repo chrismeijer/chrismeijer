@@ -1,2 +1,19 @@
+/* DISTANCES AND SIZES */
+    /* GLOBAL */    
+        $paddingTop: 40px;
+        $paddingLeftRight: 50px;
+        
+        /* LOGO */
+            $logoSize: auto;
+
+
+/* COLORS */
 $almostBlack: #333;
 $mainBlue: #00f;
+$commonWhite: #fff;
+
+/* SCROLL */
+    $parallax-offset: 0vh;
+    $content-offset: 0vh;
+    $transition-speed: 1.2s;
+    $slide-number: 4;

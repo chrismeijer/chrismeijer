@@ -1,0 +1,95 @@
+.large-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh + $parallax-offset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    will-change: transform;
+    transform: translateY($parallax-offset);
+    transition: all $transition-speed cubic-bezier(.22,.44,0,1);
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.5);
+    }
+
+    &-home {
+        background-image: url('./img/large-background--bg1.jpg');
+        transform: translateY(-$parallax-offset / 2);
+        z-index: 4;
+        .large-background__content {
+            transform: translateY($parallax-offset /2);
+        }
+    }
+
+    &-about {
+        background-image: url('./img/bg.png');
+        z-index: 3;
+    }
+
+    &-portfolio {
+        background-image: url('https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg');
+        z-index: 2;
+    }
+
+    &-contact {
+        background-image: url('https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg');
+        z-index: 1;
+    }
+
+    &__content {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-flow: column nowrap;
+        color: $commonWhite;
+        transform: translateY($content-offset);
+        will-change: transform;
+        backface-visibility: hidden;
+        transition: all $transition-speed+.5 cubic-bezier(0.22, 0.44, 0, 1);
+
+        &-title {
+            color: $commonWhite;
+        }
+
+        &-subtitle {
+            color: $commonWhite;
+        }
+    }
+
+    &.up-scroll {
+        transform: translate3d(0,-$parallax-offset / 2,0);
+        .large-background__content {
+            transform: translateY($parallax-offset / 2);
+        }
+        + .large-background {
+            transform: translate3d(0,$parallax-offset,0);
+            .large-background__content {
+                transform: translateY($parallax-offset);
+            }
+        }
+    }
+
+    &.down-scroll {
+        transform: translate3d(0,-100vh,0);
+        .large-background__content {
+            transform: translateY($content-offset);
+        }
+        + .large-background:not(.down-scroll) {
+            transform: translate3d(0,-$parallax-offset / 2,0);
+            .large-background__content {
+                transform: translateY($parallax-offset / 2);
+            }
+        }
+    }
+}

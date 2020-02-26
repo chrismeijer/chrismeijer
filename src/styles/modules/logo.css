@@ -1,0 +1,19 @@
+.logo {
+    top: $paddingTop;
+    left: $paddingLeftRight;
+    z-index: 99;
+
+    &__image {
+        &-link {
+            display: block;
+            font-weight: 800;
+            border: 1px solid $commonWhite;
+            color: $commonWhite;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            width: $logoSize;
+            height: $logoSize;
+        }
+    }
+}

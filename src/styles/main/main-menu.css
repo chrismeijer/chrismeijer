@@ -1,0 +1,21 @@
+.main-menu {
+    top: $paddingTop;
+    right: $paddingLeftRight;
+    z-index: 99;
+
+    &__item {
+        list-style-type: none;
+        float: left;
+        margin-left: 50px;
+    }
+
+    &__link {
+        color: $commonWhite;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover{
+            color: #ccc;
+        }
+    }
+}

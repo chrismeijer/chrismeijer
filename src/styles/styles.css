@@ -1,6 +1,8 @@
-@import 'normalize.css';
+/*@import 'normalize.css';*/
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import 'main/vars.css';
 @import 'main/global.css';
-@import 'modules/subpage.css';
-@import 'modules/block.css';
+@import 'modules/logo.css';
+@import 'modules/large-background.css';
+@import 'main/main-menu.css';
+/*@import 'modules/block.css';*/
