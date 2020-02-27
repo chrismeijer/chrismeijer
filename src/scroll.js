@@ -115,8 +115,8 @@ function slideDurationTimeout(slideDuration) {
 }
 
 // ------------- ADD EVENT LISTENER ------------- //
-var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
-window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
+/*var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
+window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);*/
 
 // ------------- SLIDE MOTION ------------- //
 function nextItem() {
@@ -134,4 +134,10 @@ $('.main-menu__item-link').click(function() {
   var evt = new Object();
   evt.wheelDelta = -120;
   clickScroll(evt, currentSlideNumber, toSlideIndex);
+});
+
+$('.large-background__content').scroll(function(){
+  var scrollPositionY = $(window).scrollTop();
+  console.log(scrollPositionY);
+  $('.scroll').text(scrollPositionY);
 });
