@@ -1,0 +1,22 @@
+.article {
+    &__title {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-size: 2.0rem;
+    }
+
+    &__subtitle {
+        color: $txt_common;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-size: 1.2rem;
+    }
+
+    &__content {
+        color: $txt_common;
+
+        &-txt-dark {
+            color: $txt_grey;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.btn {
+    background: $btn_bg_common;
+    color: $btn_txt_common;
+    font-weight: 600;
+    text-decoration: none;
+    padding: $btn_txt_padding-large;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px;
+    border-bottom: 3px solid $btn_border_bottom_common;
+
+    &-wide {
+        display: block;
+        width: calc(100% - 40px);
+        padding: $btn_txt_padding-common;
+    }
+
+    &:hover {
+        background: $btn_bg_common_hover;
+        color: $btn_txt_common_hover;
+    }
+
+    &-success {
+
+        &:hover {
+
+        }
+    }
+
+    &-warning {
+
+        &:hover {
+            
+        }
+    }
+
+    &-info {
+        
+        &:hover {
+            
+        }
+    }
+
+    &-cancel {
+        
+        &:hover {
+            
+        }
+    }
+}

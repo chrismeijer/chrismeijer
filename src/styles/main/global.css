@@ -1,6 +1,5 @@
 html, body, body * {
     font-family: 'Poppins', Verdana;
-    color: #333;
 }
 
 html, body {
@@ -10,11 +9,24 @@ html, body {
     padding: 0px;
 }
 
-ul {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+html, body, a {
+    color: $txt_common;
+}
+
+a:hover {
+    color: $txt_common_hover;
 }
 
 .position-fixed {
     position: fixed;
 }
+
+.display__none {
+    display: none;
+}
+
+/* BY VARIABLES */
+    .padding__zero {
+        margin: 0px;
+        padding: 0px;
+    }

@@ -1,0 +1,29 @@
+.social-menu {
+    z-index: 99;
+
+    &__item {
+        list-style-type: none;
+        float: left;
+        margin-left: 20px;
+
+        &-link {
+            text-decoration: none;
+            font-weight: 600;
+            color: $txt_common;
+
+            border: 1px solid $txt_common;
+            border-radius: 50%;
+            display: block;
+            height: 1.5rem;
+            width: 1.5rem;
+            font-size: 1rem;
+            text-align: center;
+            padding: 5px;
+
+            &:hover {
+                color: $txt_common_hover;
+                border-color: $txt_common_hover;
+            }
+        }
+    }
+}

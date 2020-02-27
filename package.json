@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/chrismeijer/chrismeijer#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "axios": "^0.19.0",
     "jquery": "^3.4.1",
     "lazysizes": "^5.1.2",

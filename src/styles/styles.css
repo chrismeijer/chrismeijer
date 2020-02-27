@@ -1,8 +1,13 @@
-/*@import 'normalize.css';*/
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import 'main/vars.css';
+@import 'main/fixed-positions.css';
+@import 'main/animate.css';
+@import 'main/buttons.css';
 @import 'main/global.css';
-@import 'modules/logo.css';
-@import 'modules/large-background.css';
+@import 'main/logo.css';
 @import 'main/main-menu.css';
-/*@import 'modules/block.css';*/
+@import 'main/social-menu.css';
+@import 'modules/article.css';
+@import 'modules/large-background.css';
+@import 'modules/card.css';
+@import 'modules/modal.css';

@@ -1,11 +1,18 @@
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
+import '@fortawesome/fontawesome-free/js/regular';
+import '@fortawesome/fontawesome-free/js/brands';
+
 import './styles/styles.css';
 
 import _ from 'lodash';
-import './scroll.js';
+import './scroll';
+import './modal';
 
-var x=0;
 $(document).ready(function() {
-    $(document).scroll(function() {
-        $('.scroll').text($(window).scrollTop());
+    $('.open__external').click(function(e) {
+        e.preventDefault();
+        var url = $(this).attr('href');
+        window.open(url, '_blank');
     });
 });

@@ -1,16 +1,36 @@
 /* DISTANCES AND SIZES */
     /* GLOBAL */    
-        $paddingTop: 40px;
-        $paddingLeftRight: 50px;
+        $paddingVertical: 40px;
+        $paddingHorizontal: 50px;
         
         /* LOGO */
             $logoSize: auto;
 
+        /* BUTTONS */
+            $btn_txt_padding-common: 10px;
+            $btn_txt_padding-large: 20px;
+
 
 /* COLORS */
-$almostBlack: #333;
-$mainBlue: #00f;
-$commonWhite: #fff;
+    /* GLOBAL */
+        $bg_common: #333;
+        $bg_white: #fff;
+        
+        $txt_common: #fff;
+        $txt_grey: #333;
+        $txt_common_hover: rgb(255, 145, 19);
+
+    /* BUTTONS */
+        $btn_bg_common: $txt_common_hover;
+        $btn_border_bottom_common: rgb(180, 97, 1);
+        $btn_txt_common: $txt_common;
+        $btn_bg_common_hover: rgb(255, 178, 91);
+        $btn_txt_common_hover: $txt_common;
+
+
+/* ANIMATIONS */
+    $firstDelay: .3s;
+    $secondDelay: 200ms;
 
 /* SCROLL */
     $parallax-offset: 0vh;

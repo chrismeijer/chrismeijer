@@ -1,0 +1,28 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw -4rem);
+    height: 100vh;
+    background-color: $bg_white;
+    color: $txt_grey;
+    overflow: auto;
+    z-index: 999;
+    text-align: justify;
+
+    &__content {
+        padding: $paddingVertical $paddingHorizontal;
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: $paddingHorizontal;
+
+        &-link {
+            color: $txt_grey;
+            font-size: 4rem;
+        }
+    }
+}
