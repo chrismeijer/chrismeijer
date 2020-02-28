@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100vw -4rem);
+    width: calc(100vw);
     height: 100vh;
     background-color: $bg_white;
     color: $txt_grey;

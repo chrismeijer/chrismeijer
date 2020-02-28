@@ -1,6 +1,15 @@
 $('.btn__portfolio').click(function() {
+    var portfolioTitle = $(this).parent().parent().find('.card__content').text();
     var loadModal = $(this).attr('data-project');
-    $('.modal__' + loadModal).toggle();
+
+    $.get('portfolio-'+loadModal+'.html', function(portfolioHTML) {
+        $('.modal').find('.article__title').text(portfolioTitle);
+        $('.modal').find('.article__content').html(portfolioHTML);
+    });    
+
+    $('.modal').toggle();
+
+    return false;
 });
 
 $('.modal__close-link').click(function() {
@@ -9,4 +18,5 @@ $('.modal__close-link').click(function() {
     }, function() {
         $(this).toggle().css("top","0");
     });
+    return false;
 });
