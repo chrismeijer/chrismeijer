@@ -10,7 +10,7 @@ import './scroll';
 import './modal';
 
 $(document).ready(function() {
-    $('.open__external').click(function(e) {
+    $('.link__external').click(function(e) {
         e.preventDefault();
         var url = $(this).attr('href');
         window.open(url, '_blank');

@@ -129,7 +129,7 @@ function previousItem() {
   $currentSlide.removeClass("down-scroll").addClass("up-scroll");
 }
 
-$('.main-menu__item-link').click(function() {
+$('.menu__main-link').click(function() {
   var toSlideIndex = slidesIndex[$(this).attr('href').replace('#','')];
   var evt = new Object();
   evt.wheelDelta = -120;
@@ -138,6 +138,5 @@ $('.main-menu__item-link').click(function() {
 
 $('.large-background__content').scroll(function(){
   var scrollPositionY = $(window).scrollTop();
-  console.log(scrollPositionY);
   $('.scroll').text(scrollPositionY);
 });

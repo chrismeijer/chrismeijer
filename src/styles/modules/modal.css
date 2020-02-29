@@ -1,8 +1,7 @@
 .modal {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+    top: $paddingZero;
+    left: $paddingZero;
     width: calc(100vw);
     height: 100vh;
     background-color: $bg_white;

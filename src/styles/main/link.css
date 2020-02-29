@@ -1,0 +1,21 @@
+a {
+    color: $txt_common;
+    text-decoration: none;
+
+    &:hover {
+        color: $txt_common_hover;
+    }
+}
+
+.link {
+    &__external {
+        &-underline {
+            text-decoration: underline;
+            color: $txt_external_link;
+
+            &:hover {
+                color: $txt_external_link_hover;
+            }
+        }
+    }
+}

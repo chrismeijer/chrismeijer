@@ -1,0 +1,25 @@
+.position {
+    &__absolute {
+        position: absolute;
+    }
+
+    &__fixed {
+        position: fixed;
+
+        &-top {
+            top: $paddingVertical;
+        }
+
+        &-bottom {
+            bottom: $paddingVertical;
+        }
+
+        &-left {
+            left: $paddingHorizontal;
+        }
+
+        &-right {
+            right: $paddingHorizontal;
+        }
+    }
+}

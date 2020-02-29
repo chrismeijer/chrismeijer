@@ -6,14 +6,13 @@
     }
 
     &__subtitle {
-        color: $txt_common;
         margin: 0 0 0 0;
         padding: 0 0 0 0;
         font-size: 1.2rem;
     }
 
     &__content {
-        color: $txt_common;
+        @include test;
 
         &-txt-dark {
             color: $txt_grey;
