@@ -10,6 +10,19 @@ After cloning, first run:
 npm install
 ```
 
+## Setup
+This file contains the e-mailaddress to hide it for the bots, but use it for the e-mail-link.
+
+```bash
+cp .env-example .env
+```
+
+## Dev
+
+```bash
+npm run dev
+```
+
 ## Usage
 
 ```bash
