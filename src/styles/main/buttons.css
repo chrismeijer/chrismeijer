@@ -47,4 +47,8 @@
             
         }
     }
+
+    &__portfolio {
+        width: 3rem;
+    }
 }

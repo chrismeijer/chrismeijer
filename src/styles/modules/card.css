@@ -14,7 +14,7 @@
     width: calc(100%/4);
     background: $bg_common;
     margin: 10px;
-    min-height: 325px;
+    min-height: 350px;
 
     &__image {
         width: 100%;

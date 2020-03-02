@@ -7,6 +7,8 @@ const postCSSPlugins = [
     require('autoprefixer')
 ]
 
+const Dotenv = require('dotenv-webpack');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Webpack = require('webpack')
 
@@ -64,6 +66,7 @@ module.exports = {
             $: 'jquery',
             jquery: 'jQuery',
             'window.jQuery': 'jquery'
-        })
+        }),
+        new Dotenv()
     ]
 }
