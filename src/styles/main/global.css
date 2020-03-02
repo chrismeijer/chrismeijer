@@ -14,15 +14,6 @@ html, body {
     display: none;
 }
 
-.scroll {
-    display: none;
-    background: #000;
-    color: #fff;
-    position: absolute;
-    width: 250px;
-    z-index: 99999999;
-}
-
 /* BY VARIABLES */
     .padding__zero {
         margin: 0px;
