@@ -1,9 +1,9 @@
 .animate {
-    &__hover {
+    &-hover {
         transition: all .3s ease-in-out;
     }
 
-    &__reveal {
+    &-reveal {
         opacity: 0;
         -webkit-animation: reveal $firstDelay cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
         -moz-animation: reveal $firstDelay ease-in 1 normal forwards;

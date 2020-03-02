@@ -10,9 +10,13 @@ import './scroll';
 import './modal';
 
 $(document).ready(function() {
+<<<<<<< HEAD
     console.log('env:', process.env.EMAIL_ADDRESS);
 
     $('.open__external').click(function(e) {
+=======
+    $('.link__external').click(function(e) {
+>>>>>>> 4f2d734b2c827fdf7e2045581ebed236fc286531
         e.preventDefault();
         var url = $(this).attr('href');
         window.open(url, '_blank');

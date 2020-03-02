@@ -1,5 +1,6 @@
 /* DISTANCES AND SIZES */
-    /* GLOBAL */    
+    /* GLOBAL */
+        $paddingZero: 0;
         $paddingVertical: 40px;
         $paddingHorizontal: 50px;
         
@@ -19,6 +20,9 @@
         $txt_common: #fff;
         $txt_grey: #333;
         $txt_common_hover: rgb(255, 145, 19);
+
+        $txt_external_link: #ffefe1;
+        $txt_external_link_hover: #ffe0c5;
 
     /* BUTTONS */
         $btn_bg_common: $txt_common_hover;

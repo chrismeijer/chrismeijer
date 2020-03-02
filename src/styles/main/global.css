@@ -7,18 +7,7 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-}
-
-html, body, a {
     color: $txt_common;
-}
-
-a:hover {
-    color: $txt_common_hover;
-}
-
-.position-fixed {
-    position: absolute;
 }
 
 .display__none {
@@ -26,7 +15,7 @@ a:hover {
 }
 
 .scroll {
-    /* display: none; */
+    display: none;
     background: #000;
     color: #fff;
     position: absolute;
