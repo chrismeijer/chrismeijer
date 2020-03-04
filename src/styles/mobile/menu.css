@@ -1,0 +1,84 @@
+@media only screen and (max-width: 600px) {
+    .menu {
+        &__main {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            &-hamburger {
+                display: block;
+                position: absolute;
+                top: $paddingVertical;
+                right: $paddingHorizontal;
+                z-index: 99;
+            }
+
+            &-content {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                padding-top: 50px;
+                background: $bg_common;
+
+                transform-origin: 0% 0%;
+                transform: translate(-100%, 0);
+                
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+            }
+
+            &-navigation {
+                margin: 0;
+                padding: 0;
+            }
+
+            &-item {
+                list-style-type: none;
+                float: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            &-active {
+                & .menu__main-content {
+                    transform: none;
+                }
+
+                & .hamburger__link-bar {
+                    opacity: 1;
+                    transform: rotate(-45deg) translate(.5px, -2px);
+
+                    &:nth-last-child(3) {
+                        transform: rotate(45deg) translate(-1px, -5px);
+                    }
+
+                    &:nth-last-child(2) {
+                        opacity: 0;
+                        transform: rotate(0deg) scale(0.2, 0.2);
+                    }
+                }
+            }
+        }
+
+        &__social {
+            &-content {
+                position: relative;
+                width: 100%;
+            }
+
+            &-navigation {
+                position: relative;
+                float: left;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0px auto;
+            }
+
+            &-item:nth-child(1) {
+                margin-left: 0;
+            }
+        }
+    }
+}

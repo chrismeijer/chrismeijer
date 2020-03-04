@@ -12,8 +12,6 @@
     }
 
     &__content {
-        @include test;
-
         &-txt-dark {
             color: $txt_grey;
         }

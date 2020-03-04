@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+    .card__wrapper {
+        flex-flow: column nowrap;
+    }
+
+    .card {
+        width: calc(100vw - 20px);
+        padding-top: 50px;
+        min-height: auto;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+
+        &__image {
+            margin-left: 20px;
+            width: calc(100% - 120px);
+            height: 235px;
+        }
+
+        &__content {
+            position: absolute;
+            width: 100%;
+            margin-top: -55px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 800;
+        }
+
+        &__link {
+            position: relative;
+            height: 100%;
+            padding: 0 0 0 20px;
+        }
+    }
+}

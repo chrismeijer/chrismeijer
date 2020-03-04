@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import 'main/vars.css';
-@import 'main/global.css';
-@import 'main/animate.css';
-@import 'main/logo.css';
-@import 'main/position.css';
-@import 'main/buttons.css';
-@import 'main/link.css';
-@import 'main/menu.css';
-@import 'main/filter.css';
-@import 'modules/article.css';
-@import 'modules/large-background.css';
-@import 'modules/card.css';
-@import 'modules/modal.css';
+/* MAIN */
+    @import 'main/vars.css';
+    @import 'main/global.css';
+    @import 'main/animate.css';
+    @import 'main/logo.css';
+    @import 'main/position.css';
+    @import 'main/button.css';
+    @import 'main/link.css';
+    @import 'main/menu.css';
+    @import 'main/filter.css';
+/* MODULES*/
+    @import 'modules/article.css';
+    @import 'modules/large-background.css';
+    @import 'modules/card.css';
+    @import 'modules/modal.css';
+/* MOBILE */
+    @import 'mobile/position.css';
+    @import 'mobile/menu.css';
+    @import 'mobile/large-background.css';
+    @import 'mobile/card.css';
+    @import 'mobile/button.css';
+    @import 'mobile/modal.css';

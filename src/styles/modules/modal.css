@@ -11,7 +11,17 @@
     text-align: justify;
 
     &__content {
-        padding: $paddingVertical $paddingHorizontal;
+        padding: $paddingVertical 0;
+
+        & h1, h2 {
+            margin-top: $paddingVertical;
+            margin-left: $paddingHorizontal;
+        }
+
+        & p {
+            padding-left: $paddingHorizontal;
+            padding-right: $paddingHorizontal;
+        }
     }
 
     &__close {
@@ -22,6 +32,26 @@
         &-link {
             color: $txt_grey;
             font-size: 4rem;
+        }
+    }
+
+    &__bg {
+        &-grey {
+            background-color: $bg_grey;
+        }
+    }
+
+    &__image {
+        &-small {
+            width: 40%;
+        }
+
+        &-medium {
+            width: 60%;
+        }
+
+        &-wide {
+            width: 100%;
         }
     }
 }

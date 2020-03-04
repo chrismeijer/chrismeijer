@@ -10,7 +10,11 @@ import './scroll';
 import './modal';
 
 $(document).ready(function() {
-    $('.open__external').click(function(e) {
+    $('.menu__main-link').click(function() {
+        $('.menu__main').removeClass('menu__main-active');
+    });
+
+    $('.link__external').click(function(e) {
         e.preventDefault();
         var url = $(this).attr('href');
         window.open(url, '_blank');
@@ -18,6 +22,12 @@ $(document).ready(function() {
 
     $('.link__social-email').click(function() {
         window.location.href = 'mailto:' + process.env.EMAIL_ADDRESS;
+        return false;
+    });
+
+    $('.hamburger__link').click(function() {
+        //$('.menu__main-content').slideToggle();
+        $('.menu__main').toggleClass('menu__main-active');
         return false;
     });
 });

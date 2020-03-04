@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+    .modal {
+        &__close {
+            right: 20px;
+
+            &-link {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__content {
+            & h1, h2 {
+                margin-left: 20px;
+            }
+    
+            & p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+}

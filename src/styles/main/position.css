@@ -22,4 +22,36 @@
             right: $paddingHorizontal;
         }
     }
+
+    &__align {
+        &-left {
+            text-align: left;
+        }
+
+        &-center {
+            text-align: center;
+        }
+
+        &-right {
+            text-align: right;
+        }
+
+        &-justify {
+            text-align: justify;
+        }
+    }
+
+    &__padding {
+        &-normal {
+            padding: $paddingVertical $paddingHorizontal;
+        }
+
+        &-vertical {
+            padding: $paddingVertical 0;
+        }
+
+        &-horizontal {
+            padding: 0 $paddingHorizontal;
+        }
+    }
 }
