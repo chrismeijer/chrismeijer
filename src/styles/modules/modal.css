@@ -22,6 +22,10 @@
             padding-left: $paddingHorizontal;
             padding-right: $paddingHorizontal;
         }
+
+        &-ul {
+            margin-left: $paddingHorizontal;
+        }
     }
 
     &__close {
@@ -52,6 +56,14 @@
 
         &-wide {
             width: 100%;
+        }
+    }
+
+    &__link {
+        color: $txt_common_hover;
+
+        &:hover {
+            color: $btn_border_bottom_common;
         }
     }
 }
