@@ -9,6 +9,7 @@ import _ from 'lodash';
 import './scroll';
 import './modal';
 
+
 $(document).ready(function() {
     $('.menu__main-link').click(function() {
         $('.menu__main').removeClass('menu__main-active');
@@ -28,5 +29,9 @@ $(document).ready(function() {
     $('.hamburger__link').click(function() {
         $('.menu__main').toggleClass('menu__main-active');
         return false;
+    });
+
+    $('.preloader').fadeOut('slow', function() {
+        $('.preload').fadeIn('fast');
     });
 });

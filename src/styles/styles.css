@@ -1,4 +1,8 @@
+/* PRELOADER */
+@import 'main/preload.css';
+
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 /* MAIN */
     @import 'main/vars.css';
     @import 'main/global.css';
